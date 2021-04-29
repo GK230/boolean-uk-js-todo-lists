@@ -9,10 +9,15 @@ and inspect the data
 console.log("users: ", users);
 
 console.log("todos: ", todos);
-const answer = prompt("Would you like to check your todos?")
 
 
-for (answer === "yes") {
+for (let i=0; i<Infinity; i++) {
+
+    const answer = prompt("Would you like to check your todos?")
+
+    if (answer === "no") {
+        break;
+    }
 
     const userList = []
 
@@ -48,7 +53,6 @@ for (answer === "yes") {
         }
     }
 }
-while (answer === "yes");
 
  
 
